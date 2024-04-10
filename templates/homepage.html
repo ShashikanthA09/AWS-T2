@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .firstimage img {
+        /* height: 50%;
+        width: 30%;
+        margin-left: 35%; */
+        /* padding-left: 4%; */
+        /* border: 1px solid red; */
+        width: 100%;
+        
+      }
+      .firstblock {
+        /* margin-top: 1%; */
+        padding-top: 6%;
+        padding-bottom: 6%;
+        padding-right: 40%;
+        padding-left: 2%;
+        background-color: #1F4172;
+        color: antiquewhite;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        /* border: 1px solid red; */
+
+      }
+      .firstblock hr {
+        height: 1px;
+        border: none;
+        background-color: #FFF8E3;
+        size: 20%;
+      }
+      .firstblock h6 {
+       color: #FFF8E3;
+       font-size: 1.33333em;
+       font-family: Arial,Helvetica,"sans-serif";
+       line-height: 1.7;
+       margin-bottom: .83333em;
+       display: block;
+       margin-block-start: 1em;
+       margin-block-end: 1em;
+       margin-inline-start: 0px;
+       margin-inline-end: 0px;
+
+      }
+      .firstblock button {
+        margin-top: .88889em;
+        color: #fff;
+        background-color: #18bfd4;
+        border: 0;
+        font-size: 1em;
+        padding: 1.16667em 1.94444em 1.11111em;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.15;
+
+      }
+      .belowblock {
+        margin-top: 2%;
+        
+
+
+      }
+      .belowblock1 {
+        color: #58585b;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        font-size: 3.05556em;
+        line-height: 1.18182;
+        margin-bottom: .18182em;
+        text-align: left;
+        padding-left: 3%;
+        padding-right: 50%;
+        
+      }
+      .belowblock2 {
+        display: flex;
+        padding-left: 3%;
+        
+      }
+      .belowblock2para1 {
+        color: #58585b;
+        font-family: Arial,Helvetica,"sans-serif";
+        font-weight: 400;
+        font-size: 16px;
+        
+        padding-right: 5%;
+        
+      }
+      .belowblock2para1 p {
+        padding-top: 2%;
+      }
+      .outlook {
+        display: flex;
+        padding-right: 15%;
+        background-color: #F1EFEF;
+        padding-top: 3%;
+        margin-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 2%;
+        
+      }
+      .outlookpara h2 {
+        color: #58585b;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        padding-left: 3%;
+
+       
+      }
+      .outlookparablue {
+        color: #6499E9;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 700;
+      }
+      .outlookpara p {
+        color: #58585b;
+        font-family: Arial,Helvetica,"sans-serif";
+        line-height: 1.7;
+        margin-bottom: .83333em;
+        padding-left: 3%;
+
+      }
+      .outlookimg {
+        padding-left: 4%;
+        margin-left: 8%;
+        
+        
+       
+      }
+      .outlookpara button {
+        background-color: transparent;
+        border: 1px solid #1d4e8f;
+        color: #1d4e8f;
+        display: inline-block;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-size: .77778em;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 1.15;
+        padding: 1.14286em 2.14286em;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        
+
+      }
+      .service {
+        display: flex;
+        padding-right: 15%;
+        padding-top: 3%;
+        margin-top: 2%;
+
+      }
+      .servicepara{
+        padding-top: 1%;
+        margin-top: 1%;
+        padding-left: 10%;
+      }
+      .servicepara button {
+        
+        background-color: transparent;
+        border: 1px solid #1d4e8f;
+        color: #1d4e8f;
+        display: inline-block;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-size: .77778em;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 1.15;
+        padding: 1.14286em 2.14286em;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        
+
+      }
+      .serviceimg {
+        padding-left: 3%;
+
+      }
+      .servicepara h2 {
+        color: #58585b;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+
+      }
+      .servicepara p {
+        color: #7b7b7d;
+        font-size: 1.33333em;
+        font-family: Arial,Helvetica,"sans-serif";
+        line-height: 1.7;
+        margin-bottom: .83333em;
+      }
+      .expertisepara {
+        color: #7b7b7d;
+        font-size: 1.33333em;
+        font-family: Arial,Helvetica,"sans-serif";
+        line-height: 1.7;
+        margin-bottom: .83333em;
+      }
+      .findout {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        
+        
+      }
+      .findout1 h2 {
+        font-size: 2.61111em;
+        line-height: 1.23404;
+        margin-bottom: .21277em;
+        color: #58585b;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        text-align: center;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+      .findout2{
+        display: flex;
+        padding-left: 3%;
+        color: #58585b;
+        font-family: Arial,Helvetica,"sans-serif";
+        font-weight: 400;
+        font-size: 16px;
+        padding-top: 2%;
+        padding-right: 4%;
+        padding-left: 2%;
+        
+      }
+      .findout2inside {
+        padding-right: 4%;
+      }
+      .findout2inside h3{
+        padding-top: 2%;
+      }
+      .findout3 {
+        justify-content: center;
+        padding-top: 1%;
+        padding-left: 40%;
+      }
+      .findout3 button {
+        background-color: transparent;
+        border: 1px solid #1d4e8f;
+        color: #1d4e8f;
+        display: inline-block;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-size: .77778em;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 1.15;
+        padding: 1.14286em 2.14286em;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        
+
+      }
+      .Interested hr {
+        height: 3px;
+        background-color: #6096B4;
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      .Interested h2{
+        font-size: 2.61111em;
+        line-height: 1.23404;
+        margin-bottom: .21277em;
+        color: #58585b;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        text-align: left;
+        padding-left: 2%;
+        padding-right: 40%;
+        margin-top: 3%;
+      }
+      .Interested button {
+        margin-top: .88889em;
+        margin-left: 2%;
+        color: #fff;
+        background-color: #18bfd4;
+        border: 0;
+        font-size: 1em;
+        padding: 1.16667em 1.94444em 1.11111em;
+        font-family: Avenir,Arial,Helvetica,"sans-serif";
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.15;
+        margin-bottom: 3%;
+
+      }
+      .navbar{
+        display: flex;
+        /* background-color: #F1EFEF; */
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        
+      }
+      .navbarpara{
+        display: flex;
+        margin-right: 20%;
+        
+        
+      }
+      .navbarparaservice{
+        
+        padding-left: 10%;
+        padding-right: 10%;
+        
+      }
+
+      .footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 2%;
+      }
+
+    .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     }
+
+    .footer-left {
+    flex: 1;
+    text-align: left;
+    color: #9b9b9d;
+    font-size: 1.16667em;
+    font-weight: 300;
+     }
+
+    .footer-right {
+    flex: 1;
+    text-align: right;
+     }
+
+    .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+     }
+
+    .footer-right ul li {
+    display: inline-block;
+    margin-right: 20px;
+     }
+
+    .footer-right ul li:last-child {
+    margin-right: 0;
+     }
+
+    .footer-right ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+     }
+
+.footer-right ul li a:hover {
+    color: #555;
+     }
+     
+
+    
+
+    </style>
+
+    <title>This is Home Page</title>
+  </head>
+  <body>
+    {% csrf_token %} 
+    {% load static %}
+    <!-- <h1>Home Page</h1>
+    <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a> -->
+
+    <div class ="navbar">
+      <div class="navbarlogo">
+        <!-- <img src="{% static 'logo.png' %}" alt=""> -->
+        <a href="{% url 'home' %}" >
+          <img src="{% static 'logo.png' %}" alt="Image">
+
+      </div>
+      <div class="navbarpara">
+        <div class="navbarparaservice">
+        <a href="{% url 'products' %}" >Service</a>
+        </div>
+        <div class="navbarparaservice">
+        <a href="{% url 'about' %}" >About</a>
+        </div>
+        <div class="navbarparaservice">
+          <a href="{% url 'company' %}" >Company</a>
+          </div>
+        <div class="navbarparaservice">
+        <a href="{% url 'contact' %}" >Contact</a>
+        </div>
+        
+        <!-- <a href="{% url 'logout' %}" class="btn btn-primary">Submit an Inquiry</a> -->
+        <div class="navbarparaservice">
+        <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+        </div>
+      
+      </div>
+    </div>
+    <hr>
+
+    <div class ="firstimage">
+      <img src="{% static 'slider7.webp' %}" alt="">
+
+    </div>
+
+    
+
+    
+
+
+    <div class = "firstblock">
+      <h1> Focused. Strategic. Pragmatic. </h1>
+      <hr>
+      <h6> We solve complex technology and operations challenges for the investment management industry, leveraging our deep consulting experience and 30-year history of project success.</h6>
+      <!-- <button> LEARN MORE ABOUT US </button> -->
+      <a href="{% url 'about' %}" class="btn btn-outline-info">LEARN MORE</a>
+    </div>
+
+    <div class ="belowblock"> 
+
+      <div class = "belowblock1">
+      <h1> Chart a new course with the right partner at the helm.</h1>
+      </div>
+
+      <div class="belowblock2">
+        <div class ="belowblock2para1">
+          <img src="https://www.citisoft.com/hubfs/Account-50px.png">
+          <p>Citisoft partners with the world's leading asset management firms and service providers to create impactful and effective solutions for today's complex business problems. Our sole focus is assessing, designing, and delivering results-oriented operations and technology change across the investment management process.</p>
+
+        </div>
+        <div class ="belowblock2para1">
+          <img src="https://www.citisoft.com/hubfs/Execution-50px.png">
+          <p>Your business is at a tipping point. A wave of innovation looms ahead, but you’re still anchored to processes, technologies, or strategies that are fraught with cost and risk. You need a consulting partner with the experience to help you navigate business turbulence and the vision to reach your ideal future state.</p>
+
+        </div>
+        <div class ="belowblock2para1">
+          <img src="https://www.citisoft.com/hubfs/Assets%2c-Finance-(small)-50px.png">
+          <p>We work with the world’s leading investment managers and third party service providers. From hedge funds to insurers to institutional asset managers, we know the business of managing money. </p>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+    <div class = "outlook">
+      <div class ="outlookpara">
+        <h2> Outlook 2024</h2>
+        <p> Transformation is underway that will set the course of the industry for the next decade. While the excitement of innovation in cutting edge areas such as artificial intelligence or advanced computing welcomes speculation about disruptive change in asset management, the industry at large is still grappling with how to modernize operating models. </p>
+
+        <p>Download your copy of Citisoft’s Outlook 2024 with an in-depth look at how trends in outsourcing, data, and technology are changing priorities for operational leaders and setting the stage for transformation.</p>
+        <p class = "outlookparablue">Download your copy of Outlook 2024.</p>
+
+      </div>
+      <div class ="outlookimg">
+        <img src="https://www.citisoft.com/hs-fs/hubfs/Homepage%202024%20promo%20(3).png?width=478&height=320&name=Homepage%202024%20promo%20(3).png">
+
+      </div>
+    </div>
+
+    <div class = "service">
+      <div class ="serviceimg">
+        <img src ="https://www.citisoft.com/hs-fs/hubfs/Homepage%20Services.png?width=478&height=320&name=Homepage%20Services.png">
+        
+
+      </div>
+      <div class ="servicepara">
+        <h2>Services</h2>
+        <p> Whether you're mapping a complete business transformation project or simply upgrading an application, we can meet any challenge with you. Our consulting team has the perspective to see beyond the horizon and the hands-on experience to help guide you to your destination.</p>
+        <button>LEARN MORE ABOUT OUR SERVICES</button>
+        <!-- <a href="{% url 'about' %}" class="btn btn-outline-info">LEARN MORE ABOUT OUR SERVICES</a> -->
+
+
+      </div>
+      
+    </div>
+    <div class = "outlook">
+      <div class ="outlookpara">
+        <h2> Expertise</h2>
+        <p class = "expertisepara"> To reach lofty goals, you need partners who can do more than crew the ship—you need true expertise. With experience leading transformative projects across every facet of the investment lifecycle, our consultants have a clear line of sight into your business. </p>
+        <button>LEARN MORE ABOUT OUR EXPERTISE</button>
+
+        
+        
+
+      </div>
+      <div class ="outlookimg">
+        <img src="https://www.citisoft.com/hs-fs/hubfs/Homepage%20Expertise.png?width=478&height=320&name=Homepage%20Expertise.png">
+
+      </div>
+    </div>
+    <div class ="findout">
+      <div class ="findout1">
+        <h2> Find out how we can help with your investments or business strategy. </h2>
+
+      </div>
+      <div class ="findout2">
+        <div class="findout2inside">
+          <img src="https://www.citisoft.com/hs-fs/hubfs/Chart-1.1-58px.png?width=58&height=45&name=Chart-1.1-58px.png">
+          <h3>Traditional Investment </h3>
+          <p>Whether you're an asset owner or institutional manager, we'll help you meet your business goals by leveraging decades of experience achieving client success.</p>
+        </div>
+        <div class="findout2inside">
+          <img src="https://www.citisoft.com/hs-fs/hubfs/Assets%2c-Finance-(big)-58px.png?width=36&height=58&name=Assets%2c-Finance-(big)-58px.png">
+          <h3>Non-Traditional Investment </h3>
+          <p>From hedge funds to private equity to real estate, we can help you streamline your technology, operations, and data management for complex investments.</p>
+        </div>
+        <div class="findout2inside">
+          <img src="https://www.citisoft.com/hs-fs/hubfs/Banking-58px.png?width=71&height=58&name=Banking-58px.png">
+          <h3>Asset Servicing</h3>
+          <p>We have unmatched experience partnering with the world's leading service providers and clients to design and deliver efficient and sustainable joint operating models.</p>
+        </div>
+
+      </div>
+      <div class="findout3">
+        <button>LEARN ABOUT OUR CLIENTS</button>
+      </div>
+
+    </div>
+    <div class="Interested">
+      <hr>
+      <h2>Interested in learning how Citisoft can help achieve your goals? Contact us to speak with the experts.</h2>
+      <button> SPEAK WITH CITISOFT </button>
+      <hr>
+      
+    </div>
+    <div class ="insight">
+      <img src="{% static 'isights.png' %}" alt="">
+
+      
+    </div>
+
+
+    <div class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+          <p>&copy; 2024 Citisoft. All Rights Reserved.</p>
+      </div>
+      <div class="footer-right">
+          <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Notice at Collection</a></li>
+          </ul>
+      </div>
+    </div>
+    </div>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

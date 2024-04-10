@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Company</th>
+        <th scope="col">Software</th>
+        <th scope="col">Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in data %}
+      <tr>
+        <td>{{ data.company_name }}</td>
+        <td>{{ data.software_name }}</td>
+        <td>{{ data.year }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+{% endblock  %}
+

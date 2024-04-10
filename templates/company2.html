@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page</title>
+<style>
+    /* body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    } */
+    .top-bar {
+        background-color: #6B96CF; /* Blue color for the bar */
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-bar button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 10px;
+        border-radius: 50%; /* To make the profile button round */
+        padding: 5px;
+    }
+    .search-bar {
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        width: 200px;
+    }
+    .product-section {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff; /* Background color for the product section */
+    }
+    .product-section img {
+        max-width: 200px;
+        height: auto;
+        margin-right: 20px;
+    }
+    .product-info {
+        flex: 1;
+    }
+    .product-info h2 {
+        margin: 0;
+        color: #111;
+        font-size: 18px;
+    }
+    .product-info p {
+        margin: 5px 0;
+        color: #555;
+        font-size: 16px;
+    }
+    .add-to-cart-btn,
+    .add-to-wishlist-btn {
+        padding: 10px 20px;
+        background-color: #B3B0AC; /* Grey color for the buttons */
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .company-info {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff; /* Background color for the company information section */
+    }
+    .product-capability {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff; /* Background color for the product capability section */
+    }
+    .comment-section {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9; /* Background color for the comment section */
+    }
+    .comment-section h2 {
+        margin-top: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+    <button>Home</button>
+    <input type="text" class="search-bar" placeholder="Search...">
+    <button>Logout</button>
+    <button>❤️</button>
+    <button class="profile-btn">Profile</button>
+</div>
+
+<div class="product-section">
+    <img src="product-image.jpg" alt="Product Image">
+    <div class="product-info">
+        <h2>ADOIT</h2>
+        <p><strong>Company Name:</strong> BOC Group</p>
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+        <p><strong>Website:</strong> <a href="https://www.boc-group.com/en/adoit/" target="_blank">https://www.boc-group.com/en/adoit/</a></p>
+        <p><strong>Software Type:</strong> Wealth Management</p>
+        <p><strong>Description:</strong> An American wealth management platform for registered investment advisors, specializing in data aggregation, analytics, and portfolio reporting.</p>
+        <p><strong>Company Established:</strong> 2009</p>
+        <p><strong>Location Countries:</strong> United States of America, United Kingdom</p>
+        <p><strong>Location Cities:</strong> Mountain View</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+        <button class="add-to-wishlist-btn">Add to Wishlist</button>
+    </div>
+</div>
+
+<div class="company-info">
+    <h2>Company Information</h2>
+    <p><strong>Contact Telephone No.:</strong> [Mountain View] +1 855 464 6268</p>
+    <p><strong>Address:</strong> [Mountain View] 787 Castro St. Mountain View, CA 94041</p>
+    <p>[New York] 335 Madison Ave, 25th floor, New York, NY 10017</p>
+    <p>[Chicago] 167 N Green Street, Chicago IL 60607</p>
+    <p>[Salt lake City] 460 West 50 North, Suite 125 Salt Lake Citiy, UT 84101</p>
+    <p>[Dublin] 10 Ely Place, Dublin 2 D02 HR98</p>
+    <p>[Edinburgh] 80 Geporge Street Office, 01-101, Edinburgh, EH2 3BU</p>
+    <p>[London] 23 Bedford Square (1st Floor) London, WC1B 3HH</p>
+    <p>[Pune] 10th Floor, Fountainhead Tower 1, Viman Nagar, Pune 411014</p>
+    <p><strong>No. of Employees:</strong> 501 - 1,000</p>
+    <p><strong>Internal Professional Services:</strong> No</p>
+    <p><strong>Last Demo date:</strong> 18/01/2023</p>
+    <p><strong>Last Reviewed Date:</strong> 18/01/2023</p>
+    <p><strong>Business Areas:</strong> Data Aggregation, Analytics, Portfolio Reporting</p>
+</div>
+
+<div class="product-capability">
+    <h2>Product Capability</h2>
+    <p><strong>Modules:</strong> BOC Group</p>
+    <p><strong>Financial Services Client Types:</strong> Wealth Management, Family Offices, Broker Dealers</p>
+    <p><strong>Cloud:</strong> Enabled / Native / Based: Cloud Based</p>
+    <p><strong>Additional Information:</strong> Gartner Magic Quadrant Leader in EA 2022
+        ADOIT is based on various international standards such as TOGAF, ArchiMate, ITIL, and COBIT. It is ArchiMate 3.1 and TOGAF-9 certified.
+        ADOIT is used for the optimization of enterprise architectures. It covers a wide application field from the establishment of EA know-how, the definition and implementation of architectural principles, the establishment of business capability management, installation of compliance and IT risk management, to the integration of process management initiatives.</p>
+    <p><strong>Document to attach?</strong> No</p>
+</div>
+
+
+
+</body>
+</html>

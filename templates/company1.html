@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Addepar Inc.</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  .company-info {
+    margin-top: 20px;
+  }
+  .company-info h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  .company-info p {
+    margin: 5px 0;
+  }
+  .rating {
+    font-size: 24px;
+    color: gold;
+  }
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  .address {
+    margin-bottom: 10px;
+  }
+  .address p {
+    margin: 5px 0;
+  }
+  .address p:first-child {
+    font-weight: bold;
+    color: #007bff;
+  }
+  .additional-info {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .additional-info p {
+    margin: 5px 0;
+  }
+
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 2%;
+      }
+
+    .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     }
+
+    .footer-left {
+    flex: 1;
+    text-align: left;
+    color: #9b9b9d;
+    font-size: 1.16667em;
+    font-weight: 300;
+     }
+
+    .footer-right {
+    flex: 1;
+    text-align: right;
+     }
+
+    .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+     }
+
+    .footer-right ul li {
+    display: inline-block;
+    margin-right: 20px;
+     }
+
+    .footer-right ul li:last-child {
+    margin-right: 0;
+     }
+
+    .footer-right ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+     }
+
+    .footer-right ul li a:hover {
+    color: #555;
+     }
+    
+
+</style>
+</head>
+<body>
+    {% csrf_token %} 
+    {% load static %}
+    
+   
+  <div class="container">
+    
+    
+    <h1>Addepar Inc.</h1>
+    <!-- <div class="img">
+        <img src="{% static 'addepar.png' %}" alt="">
+        </div> -->
+    
+    <div class="company-info">
+      <h2>Company Information</h2>
+      <p>Company Name: Addepar Inc.</p>
+      <p>Rating: <span class="rating">⭐⭐⭐⭐⭐</span></p>
+      <p>Website: <a href="https://addepar.com/" target="_blank">addepar.com</a></p>
+      <p>Software Type: Wealth Management</p>
+      <p>Description: An American wealth management platform for registered investment advisors, specializing in data aggregation, analytics, and portfolio reporting.</p>
+      <p>Company Established: 2009</p>
+      <p>Location Countries: United States of America, United Kingdom</p>
+      <p>Location Cities: Mountain View</p>
+      <p>Add to Cart <a href="#" class="btn">Add to Cart</a> <a href="#" class="btn">Add to Wishlist</a></p>
+      <h2>Contact Information</h2>
+
+      
+      
+     
+      <div class="address">
+        <p>Contact Telephone No. [Mountain View]: +1 855 464 6268</p>
+        <p>Address [Mountain View]: 787 Castro St. Mountain View, CA 94041</p>
+        <!-- Add more address here if needed -->
+      </div>
+      <p>No. of Employees: 501 - 1,000</p>
+      <p>Internal Professional Services: No</p>
+      <p>Last Demo date: 18/01/2023</p>
+      <p>Last Reviewed Date: 18/01/2023</p>
+      <p>Business Areas: Data Aggregation, Analytics, Portfolio Reporting</p>
+      <h2>Product Capability</h2>
+      <p>Modules: Addepar</p>
+      <p>Financial Services Client Types: Wealth Management, Family Offices, Broker Dealers</p>
+      <p>Cloud: Enabled / Native / Based: Cloud Based</p>
+      <div class="additional-info">
+        <h3>Additional Information</h3>
+        <p>Addepar software facilitates both visualizing an investment portfolio's exposures at the individual asset class and also tabulating the portfolio's total value according to real-time value of the assets under management. In September 2016, Salesforce.com announced their partnership with Addepar for Salesforce's Wave Financial Services Cloud for financial advisers, making it easier to see across asset classes and produce a single visual for their clients.</p>
+        <p>Document to attach? No</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="imgadd">
+    <img src="{% static 'addepar.png' %}" alt="">
+    </div>
+  
+
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+          <p>&copy; 2024 Citisoft. All Rights Reserved.</p>
+      </div>
+      <div class="footer-right">
+          <ul>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Notice at Collection</a></li>
+          </ul>
+      </div>
+    </div>
+    </div>  
+</body>
+</html>
